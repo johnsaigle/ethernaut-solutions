@@ -17,7 +17,7 @@ For a beginner, this greatly simplifies the deployment and build process.
 - [x] 5-Token.sol
 - [x] 6-Delegation.sol
 - [x] 7-Force.sol
-- [ ] 8-Vault.sol
+- [x] 8-Vault.sol
 - [ ] 9-King.sol
 - [ ] 10-ReEntrancy.sol
 - [ ] 11-Elevator.sol
