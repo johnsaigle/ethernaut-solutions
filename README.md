@@ -1,7 +1,11 @@
-# ethernaut
+# ethernaut-solutions
 
-My solutions to [Ethernaut CTF](https://ethernaut.openzeppelin.com/).
-In-depth explanations for each level [can be read on my blog](https://cmichel.io/ethernaut-solutions/).
+Solutions to [Ethernaut CTF](https://ethernaut.openzeppelin.com/)/LiftTicket for Avax.
+
+The unit-test solution format is based on the work done by [MrToph](https://github.com/MrToph)
+Check out his work! His blog posts helped me to get started with smart contract
+auditing. This repository uses unit tests instead of cloning Ethernaut as-is.
+For a beginner, this greatly simplifies the deployment and build process.
 
 ## Development
 
