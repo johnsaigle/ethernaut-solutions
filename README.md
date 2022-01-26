@@ -7,6 +7,31 @@ Check out his work! His blog posts helped me to get started with smart contract
 auditing. This repository uses unit tests instead of cloning Ethernaut as-is.
 For a beginner, this greatly simplifies the deployment and build process.
 
+## Current Progress
+
+- [x] 0-Hello.sol _(but not in this repo)_
+- [x] 1-Fallback.sol _(but not in this repo)_
+- [x] 2-Fallout.sol _(but not in this repo)_
+- [x] 3-CoinFlip.sol
+- [x] 4-Telephone.sol
+- [ ] 5-Token.sol
+- [ ] 6-Delegation.sol
+- [ ] 7-Force.sol
+- [ ] 8-Vault.sol
+- [ ] 9-King.sol
+- [ ] 10-ReEntrancy.sol
+- [ ] 11-Elevator.sol
+- [ ] 12-Privacy.sol
+- [ ] 13-GatekeeperOne.sol
+- [ ] 14-GatekeeperTwo.sol
+- [ ] 15-NaughtCoin.sol
+- [ ] 16-Preservation.sol
+- [ ] 17-Recovery.sol
+- [ ] 18-MagicNumber.sol
+- [ ] 19-AlienCodex.sol
+- [ ] 20-Denial.sol
+- [ ] 21-Shop.sol
+
 ## Development
 
 ```bash
