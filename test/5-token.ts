@@ -13,23 +13,17 @@ before(async () => {
   accounts = await ethers.getSigners();
   [eoa] = accounts;
   // Update to match the target contract
-  const challengeFactory = await ethers.getContractFactory(`CoinFlip`);
-  // The below address comes from Ethernaut deployed on Rinkeby
-  // Go to https://ethernaut.openzeppelin.com/, select a Level, grab address
-  // from the URL
+  const challengeFactory = await ethers.getContractFactory(`Token`);
   const challengeAddress = await createChallenge(
-    `0x4dF32584890A0026e56f7535d0f2C6486753624f`
+    `0x63bE8347A617476CA461649897238A31835a32CE`
   );
   challenge = await challengeFactory.attach(challengeAddress);
-
-  // Update this to match your attack contract
-  const attackerFactory = await ethers.getContractFactory(`CoinFlipAttacker`);
-  attacker = await attackerFactory.deploy(challenge.address);
 });
 
 it("solves the challenge", async function () {
-    // Write solution code here
-
+    const address = await eoa.getAddress();
+    const result = await challenge.transfer(accounts[1].getAddress(), 20000);
+    const balance = await challenge.balanceOf(address);
 });
 
 after(async () => {
