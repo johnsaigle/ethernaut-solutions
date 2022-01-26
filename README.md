@@ -14,9 +14,9 @@ For a beginner, this greatly simplifies the deployment and build process.
 - [x] 2-Fallout.sol _(but not in this repo)_
 - [x] 3-CoinFlip.sol
 - [x] 4-Telephone.sol
-- [ ] 5-Token.sol
-- [ ] 6-Delegation.sol
-- [ ] 7-Force.sol
+- [x] 5-Token.sol
+- [x] 6-Delegation.sol
+- [x] 7-Force.sol
 - [ ] 8-Vault.sol
 - [ ] 9-King.sol
 - [ ] 10-ReEntrancy.sol
