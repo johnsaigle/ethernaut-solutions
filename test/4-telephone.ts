@@ -23,8 +23,8 @@ before(async () => {
 });
 
 it("solves the challenge", async function () {
-  tx = await attacker.attack()
-  await tx.wait()
+    //attacker.attack();
+    console.log('sanity check');
 });
 
 after(async () => {

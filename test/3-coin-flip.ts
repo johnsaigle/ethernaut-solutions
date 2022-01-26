@@ -23,18 +23,10 @@ before(async () => {
 });
 
 it("solves the challenge", async function () {
-  // need to win 10 times
-  for (let i = 0; i < 10; i++) {
-    tx = await attacker.attack();
-    await tx.wait();
+    for (let i = 0; i < 10; i++) {
+        attacker.attack();
+    }
 
-    // simulate waiting 1 block
-    await ethers.provider.send("evm_increaseTime", [1]); // add 1 second
-    await ethers.provider.send("evm_mine", [
-      /* timestamp */
-    ]); // mine the next block
-    console.log(await ethers.provider.getBlockNumber());
-  }
 });
 
 after(async () => {

@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { BigNumber, Contract, Signer } from "ethers";
+import { Contract, Signer } from "ethers";
 import { ethers } from "hardhat";
 import { createChallenge, submitLevel } from "./utils";
 
@@ -12,21 +12,24 @@ let tx: any;
 before(async () => {
   accounts = await ethers.getSigners();
   [eoa] = accounts;
-  const challengeFactory = await ethers.getContractFactory(`Preservation`);
+  // Update to match the target contract
+  const challengeFactory = await ethers.getContractFactory(`CoinFlip`);
+  // The below address comes from Ethernaut deployed on Rinkeby
+  // Not sure how to find these directly... may have to peak at source repository
+  // and copy it manually.
   const challengeAddress = await createChallenge(
-    `0x97E982a15FbB1C28F6B8ee971BEc15C78b3d263F`
+    `0x4dF32584890A0026e56f7535d0f2C6486753624f`
   );
   challenge = await challengeFactory.attach(challengeAddress);
-  const attackerFactory = await ethers.getContractFactory(
-    `PreservationAttacker`
-  );
-  // attack is done in constructor
+
+  // Update this to match your attack contract
+  const attackerFactory = await ethers.getContractFactory(`CoinFlipAttacker`);
   attacker = await attackerFactory.deploy(challenge.address);
 });
 
 it("solves the challenge", async function () {
-  tx = await attacker.attack();
-  await tx.wait();
+    // Write solution code here
+
 });
 
 after(async () => {
