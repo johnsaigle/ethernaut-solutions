@@ -23,8 +23,7 @@ before(async () => {
 });
 
 it("solves the challenge", async function () {
-    //attacker.attack();
-    console.log('sanity check');
+    attacker.attack();
 });
 
 after(async () => {
