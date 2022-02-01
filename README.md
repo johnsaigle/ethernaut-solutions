@@ -18,9 +18,9 @@ For a beginner, this greatly simplifies the deployment and build process.
 - [x] 6-Delegation.sol
 - [x] 7-Force.sol
 - [x] 8-Vault.sol
-- [ ] 9-King.sol
-- [ ] 10-ReEntrancy.sol
-- [ ] 11-Elevator.sol
+- [x] 9-King.sol
+- [x] 10-ReEntrancy.sol
+- [x] 11-Elevator.sol
 - [ ] 12-Privacy.sol
 - [ ] 13-GatekeeperOne.sol
 - [ ] 14-GatekeeperTwo.sol
