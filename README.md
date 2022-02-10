@@ -29,8 +29,8 @@ For a beginner, this greatly simplifies the deployment and build process.
 - [x] 17-Recovery.sol
 - [ ] 18-MagicNumber.sol
 - [x] 19-AlienCodex.sol
-- [ ] 20-Denial.sol
-- [ ] 21-Shop.sol
+- [x] 20-Denial.sol
+- [x] 21-Shop.sol
 
 ## Development
 
