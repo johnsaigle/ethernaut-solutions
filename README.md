@@ -26,9 +26,9 @@ For a beginner, this greatly simplifies the deployment and build process.
 - [ ] 14-GatekeeperTwo.sol
 - [x] 15-NaughtCoin.sol
 - [x] 16-Preservation.sol
-- [ ] 17-Recovery.sol
+- [x] 17-Recovery.sol
 - [ ] 18-MagicNumber.sol
-- [ ] 19-AlienCodex.sol
+- [x] 19-AlienCodex.sol
 - [ ] 20-Denial.sol
 - [ ] 21-Shop.sol
 
