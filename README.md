@@ -27,7 +27,7 @@ For a beginner, this greatly simplifies the deployment and build process.
 - [x] 15-NaughtCoin.sol
 - [x] 16-Preservation.sol
 - [x] 17-Recovery.sol
-- [ ] 18-MagicNumber.sol
+- [x] 18-MagicNumber.sol
 - [x] 19-AlienCodex.sol
 - [x] 20-Denial.sol
 - [x] 21-Shop.sol
