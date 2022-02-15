@@ -23,7 +23,7 @@ For a beginner, this greatly simplifies the deployment and build process.
 - [x] 11-Elevator.sol
 - [x] 12-Privacy.sol
 - [x] 13-GatekeeperOne.sol
-- [ ] 14-GatekeeperTwo.sol
+- [x] 14-GatekeeperTwo.sol
 - [x] 15-NaughtCoin.sol
 - [x] 16-Preservation.sol
 - [x] 17-Recovery.sol
