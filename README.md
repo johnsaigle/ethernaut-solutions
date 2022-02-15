@@ -22,7 +22,7 @@ For a beginner, this greatly simplifies the deployment and build process.
 - [x] 10-ReEntrancy.sol
 - [x] 11-Elevator.sol
 - [x] 12-Privacy.sol
-- [ ] 13-GatekeeperOne.sol
+- [x] 13-GatekeeperOne.sol
 - [ ] 14-GatekeeperTwo.sol
 - [x] 15-NaughtCoin.sol
 - [x] 16-Preservation.sol
@@ -31,6 +31,8 @@ For a beginner, this greatly simplifies the deployment and build process.
 - [x] 19-AlienCodex.sol
 - [x] 20-Denial.sol
 - [x] 21-Shop.sol
+
+_I may attempt and add solutions to the more recent puzzles in the future._
 
 ## Development
 
